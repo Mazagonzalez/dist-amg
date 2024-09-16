@@ -1,0 +1,1 @@
+function i(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}function d(n,o){let t=0,r=10;const e=o,c=1500;o<=30&&(r=200);const l=e/(c/r);let u=document.getElementById("counter-"+n);const a=setInterval(()=>{t+=l,t>=e&&(t=e,clearInterval(a)),u.textContent=i(Math.floor(t))},100)}window.counter=d;
